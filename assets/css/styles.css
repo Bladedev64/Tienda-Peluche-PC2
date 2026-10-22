@@ -5,7 +5,7 @@
 :root {
   --cream:   #fffaf3;
   --cream2:  #fff2e4;
-  --peach:   #ff8a6b;
+  --peach:   #f2e4a6;
   --peach2:  #e96a4b;
   --coral:   #ffd9c9;
   --mint:    #7fc9a9;
@@ -66,9 +66,9 @@ a  { color: var(--peach2); }
   display: inline-block; text-align: center; text-decoration: none;
   font-family: var(--font1); font-weight: 700; font-size: 1rem;
   padding: .7rem 1.4rem; border: 2px solid transparent; border-radius: 999px;
-  background: var(--peach); color: #fff; cursor: pointer;
+  background: var(--peach); color: var(--ink); cursor: pointer;
 }
-.btn:hover { background: var(--peach2); }
+.btn:hover { background: var(--peach); }
 .btn--white { background: var(--white); color: var(--ink); border-color: var(--line); }
 .btn--white:hover { background: var(--cream2); }
 .btn--block { width: 100%; }
