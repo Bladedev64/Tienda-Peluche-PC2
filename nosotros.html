@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros · Plumón &amp; Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">🧸 Plumón<span>&amp; Co.</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:2.5rem 0">
+    <div class="container">
+      <h1>Un taller con nombre y apellidos</h1>
+      <p>Empezamos en 2014 con dos costureras y una máquina en el salón de casa. Hoy somos once personas y seguimos cosiendo cada peluche a mano.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__title"><h2>Lo que no negociamos</h2></div>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__icon">🌱</div>
+          <h3>Materiales certificados</h3>
+          <p>Algodón organic y OEKO-TEX, relleno virgin y tintes sin sustancias dañinas.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✅</div>
+          <h3>Cuatro controles</h3>
+          <p>Relleno, costuras, bordado y acabado final revisados por cuatro personas.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🔧</div>
+          <h3>Reparación de por vida</h3>
+          <p>Si se le cae un botón o se abre una costura, lo reparamos gratis.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎁</div>
+          <h3>Regalo de serie</h3>
+          <p>Envoltorio premium y tarjeta escrita a mano en todos los pedidos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container grid grid--2" style="align-items:start">
+
+      <!-- RESEÑAS -->
+      <div id="resenas">
+        <div class="section__title" style="text-align:left"><h2>Reseñas</h2></div>
+        <article class="card" style="margin-bottom:1rem">
+          <h3>Oso Bruno</h3>
+          <p style="color:#f5a623">★★★★★</p>
+          <p>"Mi hija no suelta el oso desde que llegó. Es más suave de lo que esperaba."</p>
+          <small>— Marta R.</small>
+        </article>
+        <article class="card" style="margin-bottom:1rem">
+          <h3>Elefante Trompa</h3>
+          <p style="color:#f5a623">★★★★★</p>
+          <p>"Pedí el bordado personalizado y tardaron 4 días. El nombre perfecto."</p>
+          <small>— Javier P.</small>
+        </article>
+        <article class="card">
+          <h3>Unicornio</h3>
+          <p style="color:#f5a623">★★★★☆</p>
+          <p>"Envío rapidísimo y el envoltorio precioso."</p>
+          <small>— Lucía N.</small>
+        </article>
+      </div>
+
+      <!-- FORMULARIO 4 · RESEÑA -->
+      <form class="card" id="form-resena" novalidate>
+        <h3>Publica tu reseña</h3>
+        <p style="color:#6f6165;font-size:.9rem">Solo mostramos reseñas verificadas, pero tu opinión nos ayuda.</p>
+        <div>
+          <label for="resena-nombre">Tu nombre</label>
+          <input type="text" id="resena-nombre" name="nombre" placeholder="Cómo te llamas">
+          <p class="error" data-error="resena-nombre"></p>
+        </div>
+        <div>
+          <label for="resena-email">Correo electrónico</label>
+          <input type="email" id="resena-email" name="email" placeholder="tu@correo.com" autocomplete="email">
+          <p class="error" data-error="resena-email"></p>
+        </div>
+        <div>
+          <label for="resena-producto">Peluque comprado</label>
+          <select id="resena-producto" name="producto">
+            <option value="">Selecciona…</option>
+            <option>Oso Bruno</option>
+            <option>Conejo Algodón</option>
+            <option>Gato Bigotes</option>
+            <option>Elefante Trompa</option>
+            <option>Unicornio</option>
+            <option>Pato Rubí</option>
+          </select>
+          <p class="error" data-error="resena-producto"></p>
+        </div>
+        <div>
+          <label>Puntuación</label>
+          <div style="display:flex;gap:1rem;margin-bottom:1rem">
+            <label style="display:flex;align-items:center;gap:.3rem;font-weight:400"><input type="radio" name="estrellas" value="5">5</label>
+            <label style="display:flex;align-items:center;gap:.3rem;font-weight:400"><input type="radio" name="estrellas" value="4">4</label>
+            <label style="display:flex;align-items:center;gap:.3rem;font-weight:400"><input type="radio" name="estrellas" value="3">3</label>
+            <label style="display:flex;align-items:center;gap:.3rem;font-weight:400"><input type="radio" name="estrellas" value="2">2</label>
+            <label style="display:flex;align-items:center;gap:.3rem;font-weight:400"><input type="radio" name="estrellas" value="1">1</label>
+          </div>
+          <p class="error" data-error="estrellas"></p>
+        </div>
+        <div>
+          <label for="resena-texto">Tu reseña</label>
+          <textarea id="resena-texto" name="texto" placeholder="¿Qué te ha parecido?"></textarea>
+          <p class="error" data-error="resena-texto"></p>
+        </div>
+        <div class="form__check">
+          <input type="checkbox" id="resena-ok" name="autorizado">
+          <label for="resena-ok">Autorizo a publicar mi reseña</label>
+        </div>
+        <p class="error" data-error="resena-ok"></p>
+        <button type="submit" class="btn btn--block">Publicar reseña</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <h3>Plumón &amp; Co.</h3>
+        <p>Peluches artesanales hechos a mano desde 2014. Algodón organic, ojos de seguridad y mucho cariño en cada puntada.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© <span id="anio">2026</span> Plumón &amp; Co. · Política de privacidad</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

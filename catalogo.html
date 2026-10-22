@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo · Plumón &amp; Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">🧸 Plumón<span>&amp; Co.</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" class="active">Catálogo</a>
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:2.5rem 0">
+    <div class="container">
+      <h1>Catálogo</h1>
+      <p>Seis peluches, todos cosidos a mano. Filtra por nombre o categoría y añade los que te gusten al carrito.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- FORMULARIO 2 · FILTROS -->
+      <form class="form form--wide" id="form-filtro" novalidate>
+        <div class="form__row">
+          <div>
+            <label for="buscar">Buscar por nombre</label>
+            <input type="search" id="buscar" name="q" placeholder="Ej. oso, conejo…" autocomplete="off">
+            <p class="error" data-error="buscar"></p>
+          </div>
+          <div>
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option value="">Todas</option>
+              <option value="Animales">Animales</option>
+              <option value="Fantasía">Fantasía</option>
+              <option value="Colección">Colección</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn">Buscar</button>
+        <button type="button" class="btn btn--white" id="limpiar">Limpiar</button>
+      </form>
+
+      <p style="color:#6f6165;margin-top:1.5rem" id="resultado"></p>
+      <div class="grid grid--4" id="productos" style="margin-top:1rem"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <h3>Plumón &amp; Co.</h3>
+        <p>Peluches artesanales hechos a mano desde 2014. Algodón organic, ojos de seguridad y mucho cariño en cada puntada.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© <span id="anio">2026</span> Plumón &amp; Co. · Política de privacidad</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

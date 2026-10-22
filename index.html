@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plumón &amp; Co. — Inicio · Tienda de peluches artesanales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">🧸 Plumón<span>&amp; Co.</span></a>
+    <nav class="nav">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Peluches que abrazan de verdad</h1>
+      <p>Hechos a mano con algodón organic, ojos de seguridad y mucho cariño. Elige uno del catálogo y recíbelo en 72 horas.</p>
+      <a href="catalogo.html" class="btn">Ver catálogo</a>
+      <a href="nosotros.html" class="btn btn--white">Conócenos</a>
+    </div>
+  </section>
+
+  <!-- VENTAJAS -->
+  <section class="section">
+    <div class="container">
+      <div class="section__title">
+        <h2>Por qué nos eligen</h2>
+      </div>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__icon">🧵</div>
+          <h3>Cosido a mano</h3>
+          <p>Cada peluche lo cose una persona de nuestro taller, con costuras dobles.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🛡️</div>
+          <h3>Seguro desde el primer día</h3>
+          <p>Ojos de seguridad y costuras ocultas para que juegue tranquilo.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🎀</div>
+          <h3>Regalo listo</h3>
+          <p>Embalaje premium y tarjeta con mensaje escrito a mano.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🔄</div>
+          <h3>Cambio fácil</h3>
+          <p>Tienes 30 días para cambiar o devolver tu peluche.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__title">
+        <h2>Los más pedidos</h2>
+        <p>Los cuatro peluches que más salen del taller.</p>
+      </div>
+      <div class="grid grid--4" id="destacados"></div>
+      <p style="text-align:center;margin:1.5rem 0 0">
+        <a href="catalogo.html" class="btn">Ver los 6 modelos</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO 1 · BOLETÍN -->
+  <section class="section">
+    <div class="container">
+      <div class="section__title">
+        <h2>Recibe un 10% en tu primera compra</h2>
+        <p>Déjanos tu correo y te mandamos el cupón y las novedades del taller.</p>
+      </div>
+      <form class="form" id="form-boletin" novalidate>
+        <label for="boletin-mail">Correo electrónico</label>
+        <input type="email" id="boletin-mail" name="email" placeholder="tu@correo.com" autocomplete="email">
+        <p class="error" data-error="boletin-mail"></p>
+        <button type="submit" class="btn btn--block">Suscribirme</button>
+        <p class="form__hint" style="text-align:center">Sin spam. Puedes darte de baja cuando quieras.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <h3>Plumón &amp; Co.</h3>
+        <p>Peluches artesanales hechos a mano desde 2014. Algodón organic, ojos de seguridad y mucho cariño en cada puntada.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© <span id="anio">2026</span> Plumón &amp; Co. · Política de privacidad</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

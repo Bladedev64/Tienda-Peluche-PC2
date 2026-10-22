@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · Plumón &amp; Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">🧸 Plumón<span>&amp; Co.</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:2.5rem 0">
+    <div class="container">
+      <h1>Contacto</h1>
+      <p>¿Dudas sobre un pedido, una devolución o un pedido para empresa? Escríbenos y te respondemos en menos de 24 horas laborables.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid--2" style="align-items:start">
+
+      <!-- DATOS DE CONTACTO -->
+      <div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="card__icon">📧</div>
+          <h3>Correo</h3>
+          <p>hola@plumonyco.es</p>
+        </div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="card__icon">📞</div>
+          <h3>Teléfono y WhatsApp</h3>
+          <p>+34 910 000 000 · Lunes a viernes de 9:00 a 18:00</p>
+        </div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="card__icon">📍</div>
+          <h3>Taller</h3>
+          <p>Calle Panda 14, 28004 Madrid. Visitas los sábados con cita previa.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">🚚</div>
+          <h3>Envíos</h3>
+          <p>Estándar en 3-5 días (4,90 €) o express en 24-48 h (gratis desde 80 €).</p>
+        </div>
+      </div>
+
+      <!-- FORMULARIO 5 · CONTACTO -->
+      <form class="card" id="form-contacto" novalidate>
+        <h3>Escríbenos</h3>
+        <div>
+          <label for="contacto-nombre">Nombre</label>
+          <input type="text" id="contacto-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name">
+          <p class="error" data-error="contacto-nombre"></p>
+        </div>
+        <div>
+          <label for="contacto-email">Correo electrónico</label>
+          <input type="email" id="contacto-email" name="email" placeholder="tu@correo.com" autocomplete="email">
+          <p class="error" data-error="contacto-email"></p>
+        </div>
+        <div>
+          <label for="contacto-asunto">Asunto</label>
+          <select id="contacto-asunto" name="asunto">
+            <option value="">Selecciona…</option>
+            <option>Consulta sobre un pedido</option>
+            <option>Devoluciones y cambios</option>
+            <option>Pedidos para empresa</option>
+            <option>Otro asunto</option>
+          </select>
+          <p class="error" data-error="contacto-asunto"></p>
+        </div>
+        <div>
+          <label for="contacto-mensaje">Mensaje</label>
+          <textarea id="contacto-mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte…"></textarea>
+          <p class="error" data-error="contacto-mensaje"></p>
+        </div>
+        <div class="form__check">
+          <input type="checkbox" id="contacto-ok" name="privacidad">
+          <label for="contacto-ok">He leído y acepto la política de privacidad</label>
+        </div>
+        <p class="error" data-error="contacto-ok"></p>
+        <button type="submit" class="btn btn--block">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <h3>Plumón &amp; Co.</h3>
+        <p>Peluches artesanales hechos a mano desde 2014. Algodón organic, ojos de seguridad y mucho cariño en cada puntada.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© <span id="anio">2026</span> Plumón &amp; Co. · Política de privacidad</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

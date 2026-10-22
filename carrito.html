@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito · Plumón &amp; Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">🧸 Plumón<span>&amp; Co.</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html" class="active">Carrito (<span id="contador">0</span>)</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:2.5rem 0">
+    <div class="container">
+      <h1>Tu carrito</h1>
+      <p>Revisa los peluches, completa los datos de envío y confirma el pedido.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid--2" style="align-items:start">
+
+      <!-- CONTENIDO DEL CARRITO -->
+      <div class="card">
+        <h3>Peluches seleccionados</h3>
+        <ul class="cart-list" id="carrito-items"></ul>
+        <p class="total" id="total">Total: 0,00 €</p>
+        <p style="margin-top:1rem">
+          <a href="catalogo.html" class="btn btn--white">← Seguir comprando</a>
+          <button type="button" class="btn btn--white" id="vaciar">Vaciar carrito</button>
+        </p>
+      </div>
+
+      <!-- FORMULARIO 3 · DATOS DE ENVÍO -->
+      <form class="card" id="form-envio" novalidate>
+        <h3>Datos de envío</h3>
+        <div>
+          <label for="envio-nombre">Nombre completo</label>
+          <input type="text" id="envio-nombre" name="nombre" placeholder="Ana García" autocomplete="name">
+          <p class="error" data-error="envio-nombre"></p>
+        </div>
+        <div>
+          <label for="envio-email">Correo electrónico</label>
+          <input type="email" id="envio-email" name="email" placeholder="ana@correo.com" autocomplete="email">
+          <p class="error" data-error="envio-email"></p>
+        </div>
+        <div>
+          <label for="envio-dir">Dirección</label>
+          <input type="text" id="envio-dir" name="direccion" placeholder="Calle Mayor, 12" autocomplete="street-address">
+          <p class="error" data-error="envio-dir"></p>
+        </div>
+        <div class="form__row">
+          <div>
+            <label for="envio-ciudad">Ciudad</label>
+            <input type="text" id="envio-ciudad" name="ciudad" placeholder="Madrid" autocomplete="address-level2">
+            <p class="error" data-error="envio-ciudad"></p>
+          </div>
+          <div>
+            <label for="envio-cp">Código postal</label>
+            <input type="text" id="envio-cp" name="cp" inputmode="numeric" maxlength="5" placeholder="28001">
+            <p class="error" data-error="envio-cp"></p>
+          </div>
+        </div>
+        <div class="form__check">
+          <input type="checkbox" id="envio-regalo" name="regalo">
+          <label for="envio-regalo">Es un regalo: añadir tarjeta y envoltorio (gratis)</label>
+        </div>
+        <button type="submit" class="btn btn--block">Confirmar pedido</button>
+        <p class="form__hint" style="text-align:center">Envío estándar 4,90 € · gratis desde 80 €</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <h3>Plumón &amp; Co.</h3>
+        <p>Peluches artesanales hechos a mano desde 2014. Algodón organic, ojos de seguridad y mucho cariño en cada puntada.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© <span id="anio">2026</span> Plumón &amp; Co. · Política de privacidad</small>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
