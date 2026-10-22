@@ -10,12 +10,12 @@
 
   /* ---------------- Productos ---------------- */
   const PRODUCTOS = [
-    { id: 1, nombre: "Oso Bruno",      emoji: "🧸", cat: "Animales",  precio: 34.90, stock: 12, desc: "El clásico de la casa, suave y con orejas que no se caen." },
-    { id: 2, nombre: "Conejo Algodón", emoji: "🐰", cat: "Animales",  precio: 27.50, stock: 20, desc: "Orejas larguísimas y pelaje de algodón peinado." },
-    { id: 3, nombre: "Gato Bigotes",   emoji: "🐱", cat: "Animales",  precio: 31.00, stock: 8,  desc: "Detalle en fieltro para los bigotes. Ronronea si le aprietas." },
-    { id: 4, nombre: "Elefante Trompa",emoji: "🐘", cat: "Animales",  precio: 45.00, stock: 5,  desc: "Trompa enrollable y mucho peso para tus brazos." },
-    { id: 5, nombre: "Unicornio",      emoji: "🦄", cat: "Fantasía",  precio: 39.90, stock: 14, desc: "Crin plateada y un cuerno que brilla en la oscuridad." },
-    { id: 6, nombre: "Pato Rubí",      emoji: "🦆", cat: "Colección", precio: 24.50, stock: 17, desc: "El patito de goma suave, ideal para la bañera." }
+    { id: 1, nombre: "Oso Bruno",      emoji: "🧸", cat: "Animales",  precio: 3.90, stock: 12, desc: "El clásico de la casa, suave y con orejas que no se caen." },
+    { id: 2, nombre: "Conejo Algodón", emoji: "🐰", cat: "Animales",  precio: 2.50, stock: 20, desc: "Orejas larguísimas y pelaje de algodón peinado." },
+    { id: 3, nombre: "Gato Bigotes",   emoji: "🐱", cat: "Animales",  precio: 3.00, stock: 8,  desc: "Detalle en fieltro para los bigotes. Ronronea si le aprietas." },
+    { id: 4, nombre: "Elefante Trompa",emoji: "🐘", cat: "Animales",  precio: 4.00, stock: 5,  desc: "Trompa enrollable y mucho peso para tus brazos." },
+    { id: 5, nombre: "Unicornio",      emoji: "🦄", cat: "Fantasía",  precio: 3.90, stock: 14, desc: "Crin plateada y un cuerno que brilla en la oscuridad." },
+    { id: 6, nombre: "Pato Rubí",      emoji: "🦆", cat: "Colección", precio: 2.50, stock: 17, desc: "El patito de goma suave, ideal para la bañera." }
   ];
 
   /* ---------------- Carrito (compartido entre páginas) ---------------- */
